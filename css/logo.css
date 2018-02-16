@@ -1,0 +1,70 @@
+.logo {
+  width: 128px;
+  height: 128px;
+}
+
+.logo-div {
+  position: absolute;
+  top: 76px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#logo-ipfs {
+  animation: ipfs 10s ease-in-out infinite;
+  -webkit-backface-visibility: hidden;
+}
+
+#logo-ens {
+
+  animation: ens 10s ease-in-out infinite;
+  -webkit-backface-visibility: hidden;
+}
+
+@keyframes ipfs {
+
+  0% {
+    transform: rotate3d(0, 1, 0, 0deg);
+    opacity: 1;
+  }
+
+  10% {
+    transform: rotate3d(0, 1, 0, 180deg);
+    opacity: 0.5;
+  }
+
+  50% {
+    transform: rotate3d(0, 1, 0, 180deg);
+    opacity: 0.5;
+  }
+
+  60% {
+    transform: rotate3d(0, 1, 0, 0deg);
+    opacity: 1;
+  }
+
+}
+
+@keyframes ens {
+
+  0% {
+    transform: rotate3d(0, 1, 0, 180deg);
+    opacity: 0.5;
+  }
+
+  10% {
+    transform: rotate3d(0, 1, 0, 0deg);
+    opacity: 1;
+  }
+
+  50% {
+    transform: rotate3d(0, 1, 0, 0deg);
+    opacity: 1;
+  }
+
+  60% {
+    transform: rotate3d(0, 1, 0, 180deg);
+    opacity: 0.5;
+  }
+
+}

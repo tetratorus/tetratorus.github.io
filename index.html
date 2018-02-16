@@ -1,1 +1,106 @@
-Test
+<html>
+<head>
+
+  <!-- TITLE -->
+  <title>ipfs-to-ens</title>
+
+  <!-- FONTS -->
+  <link href="https://fonts.googleapis.com/css?family=Rokkitt" rel="stylesheet">
+
+  <!-- STYLESHEETS -->
+  <link href="css/main.css" type="text/css" rel="stylesheet">
+  <link href="css/logo.css" type="text/css" rel="stylesheet">
+
+  <!-- ANALYTICS -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-111058042-3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-111058042-3');
+  </script>
+
+</head>
+<body>
+
+  <!-- CONTENT -->
+  <div id="content">
+
+    <!-- CONTAINER: TITLE -->
+    <div class="container" id="container-title">
+      <!-- Set an IPFS content hash for your ENS domain! -->
+      Set an IPFS content hash for your ENS domain!
+    </div>
+
+    <!-- CONTAINER: SPINNING ENS/IPFS LOGOS -->
+    <div class="container" id="container-logo">
+      <div class="logo-div">
+        <p><img class="logo" id="logo-ens" src="img/ens_512x512.png" /></p>
+      </div>
+
+      <div class="logo-div">
+        <p><img class="logo" id="logo-ipfs" src="img/ipfs_1024x1024.png" /></p>
+      </div>
+    </div>
+
+    <!-- CONTAINER: INPUTS -->
+    <div class="container" id="container-input">
+
+      <!-- INPUT: ENS DOMAIN -->
+      <p>
+        ENS domain:<br />
+        <!-- <input id="input-ens" type="text" placeholder="ipfs-to-ens.eth" size="48"> -->
+        <input id="input-ens" type="text" placeholder="ipfs-to-ens.eth" size="48">
+      </p>
+
+      <!-- INPUT: IPFS HASH -->
+      <p>
+        IPFS hash:<br />
+        <!-- <input id="input-ipfs" type="text" placeholder="QmdsCTbnG9FR7BDb9D3eonR1BjZBEW6p6URW1ZqVV5yVsa" size="48" maxlength="46"> -->
+        <input id="input-ipfs" type="text" placeholder="QmdsCTbnG9FR7BDb9D3eonR1BjZBEW6p6URW1ZqVV5yVsa" size="48" maxlength="46">
+      </p>
+
+    </div>
+
+    <!-- CONTAINER: ACTION BUTTON -->
+    <div class="container" id="container-action">
+
+      <!-- BUTTON: STORE HASH -->
+      <div class="button" onclick="storeHash()">
+        STORE HASH
+      </div>
+
+      <!-- INFO: NETWORK -->
+      <div id="container-network">
+        <p>Network: <span id="network">???</span></p>
+      </div>
+
+      <!-- LINK: LATEST TRANSACTION ON ETHERSCAN -->
+      <div id="container-etherscan">
+        <p><a id="etherscan" href="#" target="_blank"></a></p>
+      </div>
+
+    </div>
+
+</div>
+
+<!-- CONTAINER: FOOTER -->
+<div class="container" id="container-footer">
+
+  <!-- ICONS: GITHUB/TWITTER -->
+  <div id="div-icons">
+    <a href="https://github.com/monkybrain/ipfs-to-ens" target="_blank"><img class="icon" src="img/github.svg"></a>
+    <a href="https://twitter.com/monkybrain_" target="_blank"><img class="icon" src="img/twitter_512x512.png"></a>
+  </div>
+
+  <!-- LINK: CHROME WEB STORE -->
+  <p>Check out my <a href="https://chrome.google.com/webstore/detail/ens-content-resolver/ifgfopmoihnnicfgcpafgibiinfkodjf" target="_blank">ENS Content Resolver</a>, a Chrome extension that resolves ENS domains to IPFS hashes and redirects your
+  browser to the content.</p>
+
+</div>
+
+
+</body>
+<script src="js/index.js"></script>
+</html>
